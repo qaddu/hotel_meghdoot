@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Meghdoot | Earthy Heritage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- New Fonts: Marcellus for elegant headers, Jost for modern, clean body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    
+    <style>
+        :root {
+            --color-forest: #1a2e24; /* Deeper, richer green */
+            --color-forest-light: #243d31;
+            --color-terra: #c25e36; /* Richer terracotta */
+            --color-sand: #f8f5f0;
+            --color-dark: #111111;
+        }
+
+        body { 
+            font-family: 'Jost', sans-serif; 
+            background-color: var(--color-sand);
+            color: var(--color-dark);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, .font-serif { 
+            font-family: 'Marcellus', serif; 
+        }
+
+        /* Hero Parallax using 1.jpeg */
+        .parallax-hero {
+            background-image: url('1.jpeg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        /* Dining Parallax using 7.jpeg */
+        .parallax-dining {
+            background-image: url('7.jpeg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Floating Pill Navigation */
+        .nav-pill {
+            background: rgba(248, 245, 240, 0.9);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(26, 46, 36, 0.1);
+            transition: all 0.4s ease;
+        }
+
+        .nav-scrolled {
+            background: rgba(248, 245, 240, 0.98);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Redesigned Image Cards */
+        .image-card {
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease;
+        }
+
+        .image-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(26, 46, 36, 0.2);
+        }
+
+        .card-img-wrapper {
+            overflow: hidden;
+            height: 250px;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.5s ease;
+        }
+
+        .image-card:hover .card-img {
+            transform: scale(1.1);
+        }
+
+        /* Asymmetrical Image Overlaps for Welcome & Events */
+        .overlap-container { position: relative; width: 100%; height: 500px; }
+        
+        .welcome-img-1 { position: absolute; top: 0; left: 0; width: 70%; height: 80%; object-fit: cover; border-radius: 1rem; z-index: 1; box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .welcome-img-2 { position: absolute; bottom: 0; right: 0; width: 55%; height: 60%; object-fit: cover; border-radius: 1rem; z-index: 2; border: 8px solid var(--color-sand); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+
+        .events-img-1 { position: absolute; top: 10%; right: 0; width: 65%; height: 85%; object-fit: cover; border-radius: 1rem; z-index: 1; box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .events-img-2 { position: absolute; bottom: 5%; left: 0; width: 50%; height: 60%; object-fit: cover; border-radius: 1rem; z-index: 2; border: 8px solid var(--color-sand); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+
+        /* Custom Accents */
+        .accent-line {
+            width: 40px;
+            height: 2px;
+            background-color: var(--color-terra);
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 12px;
+        }
+    </style>
+</head>
+<body class="selection:bg-[#c25e36] selection:text-white">
+
+    <!-- Floating Navigation -->
+    <div class="fixed w-full top-0 z-50 px-4 pt-6 transition-all duration-500" id="nav-wrapper">
+        <nav class="max-w-6xl mx-auto nav-pill rounded-full py-4 px-6 md:px-8" id="navbar">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 cursor-pointer">
+                    <a class="text-2xl font-serif text-[#1a2e24] tracking-widest font-bold">
+                        MEGHDOOT<span class="text-[#c25e36]">.</span>
+                    </a>
+                </div>
+                <!-- Links -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#welcome" class="text-[#1a2e24] hover:text-[#c25e36] text-[11px] font-semibold uppercase tracking-[0.15em] transition-colors">Story</a>
+                    <a href="#stay" class="text-[#1a2e24] hover:text-[#c25e36] text-[11px] font-semibold uppercase tracking-[0.15em] transition-colors">Stay</a>
+                    <a href="#dining" class="text-[#1a2e24] hover:text-[#c25e36] text-[11px] font-semibold uppercase tracking-[0.15em] transition-colors">Dine</a>
+                    <a href="#events" class="text-[#1a2e24] hover:text-[#c25e36] text-[11px] font-semibold uppercase tracking-[0.15em] transition-colors">Events</a>
+                    <a href="#expeditions" class="text-[#1a2e24] hover:text-[#c25e36] text-[11px] font-semibold uppercase tracking-[0.15em] transition-colors">Tours</a>
+                </div>
+                <!-- CTA -->
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-[#1a2e24] text-white px-7 py-2.5 rounded-full text-[11px] font-medium uppercase tracking-[0.15em] hover:bg-[#c25e36] transition-colors duration-300">Reserve</a>
+                </div>
+                <!-- Mobile Menu Icon -->
+                <div class="md:hidden text-[#1a2e24] text-xl">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Parallax Hero Section (Image 1) -->
+    <header class="parallax-hero relative flex items-center justify-center overflow-hidden">
+        <!-- Elegant Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1a2e24]/40 via-black/30 to-[#1a2e24]/90"></div>
+        
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center mt-12">
+            
+            <div data-aos="fade-down" data-aos-duration="1200" class="mb-6">
+                <span class="bg-[#1a2e24]/50 border border-white/20 text-white text-[10px] uppercase tracking-[0.3em] px-5 py-2 rounded-full backdrop-blur-md">
+                    Gangolihat, Uttarakhand
+                </span>
+            </div>
+            
+            <!-- Main Title -->
+            <div class="text-center relative">
+                <h1 class="text-6xl md:text-8xl lg:text-9xl font-serif text-white mb-2 leading-none drop-shadow-2xl" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="200">
+                    MEGHDOOT
+                </h1>
+                <h2 class="text-xl md:text-3xl font-serif italic text-white/80 mt-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    A Heritage Retreat
+                </h2>
+            </div>
+            
+            <!-- Bottom Content -->
+            <div class="mt-16 flex flex-col items-center border-t border-white/20 pt-8 w-full max-w-2xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <p class="text-white/90 text-sm md:text-base font-light text-center mb-8 leading-relaxed">
+                    Discover the raw beauty of the Himalayas effortlessly blended with authentic Pahadi hospitality and moody elegance.
+                </p>
+                <a href="#welcome" class="group flex items-center justify-center w-12 h-12 rounded-full border border-white/30 text-white hover:bg-[#c25e36] hover:border-[#c25e36] transition-all duration-500">
+                    <i class="fas fa-chevron-down text-sm transform group-hover:translate-y-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Welcome / Story Section (Images 2 & 3) -->
+    <section id="welcome" class="py-24 md:py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                
+                <!-- Asymmetrical Image Composition -->
+                <div class="w-full lg:w-1/2" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="overlap-container">
+                        <img src="2.jpeg" alt="Resort Architecture" class="welcome-img-1" data-aos="fade-down" data-aos-delay="200">
+                        <img src="1.jpeg" alt="Interior Details" class="welcome-img-2" data-aos="fade-up" data-aos-delay="400">
+                    </div>
+                </div>
+
+                <!-- Text Block -->
+                <div class="w-full lg:w-1/2" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="mb-4">
+                        <span class="accent-line"></span>
+                        <span class="text-[#c25e36] text-[10px] font-bold uppercase tracking-[0.2em]">Our Story</span>
+                    </div>
+                    
+                    <h2 class="text-4xl md:text-5xl font-serif text-[#1a2e24] mb-8 leading-[1.2]">
+                        Where Tradition <br> Meets Tranquility.
+                    </h2>
+                    
+                    <p class="text-gray-600 font-light leading-relaxed mb-6 text-base">
+                        Nestled in the heart of Gangolihat, mere steps from the historic Post Office, Hotel Meghdoot is your luxurious basecamp in the mountains. We are proud to be an Airbnb top-rated partner.
+                    </p>
+                    
+                    <p class="text-gray-500 font-light leading-relaxed mb-10 text-sm">
+                        Whether you are here for a spiritual awakening at Maa Haat Kalika Mandir or to conquer the high-altitude treks of Munsyari, our property provides a soulful sanctuary featuring modern amenities and secure parking.
+                    </p>
+
+                    <a href="#stay" class="inline-flex items-center text-[#1a2e24] font-medium text-xs uppercase tracking-widest hover:text-[#c25e36] transition-colors pb-1 border-b border-[#c25e36]">
+                        Explore Our Spaces
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Refined Accommodations Section (Images 4, 5, 6) -->
+    <!-- Redesigned with rich forest green background and elegant image cards -->
+    <section id="stay" class="py-24 bg-[#1a2e24] relative">
+        <!-- Subtle Pattern Overlay -->
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center mb-16">
+                <div data-aos="fade-up">
+                    <span class="text-[#c25e36] text-[10px] font-bold uppercase tracking-[0.2em] block mb-3">Rest & Recharge</span>
+                    <h2 class="text-4xl md:text-5xl font-serif text-white mb-4">Mindful Accommodations</h2>
+                    <p class="text-white/60 font-light text-sm max-w-xl mx-auto">Couple-friendly environments designed with complete privacy and premium comfort in mind.</p>
+                </div>
+            </div>
+
+            <!-- Image Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1 (Image 4) -->
+                <div class="image-card bg-[#243d31]" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-img-wrapper">
+                        <img src="15.jpg" alt="Single & Couple Rooms" class="card-img">
+                    </div>
+                    <div class="p-8 border-t border-white/5">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-serif text-white">Premium Rooms</h3>
+                            <i class="fas fa-bed text-[#c25e36]"></i>
+                        </div>
+                        <p class="text-white/60 font-light text-sm leading-relaxed">Secure, private, and exceptionally comfortable environments tailored specifically for solo travelers and couples.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 (Image 5) -->
+                <div class="image-card bg-[#243d31]" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-img-wrapper relative">
+                        <img src="14.jpg" alt="Family Suites" class="card-img">
+                        <div class="absolute top-4 right-4 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/20">
+                            <span class="text-white text-[9px] uppercase tracking-widest font-bold"><i class="fab fa-airbnb mr-1 text-[#c25e36]"></i> Airbnb Listed</span>
+                        </div>
+                    </div>
+                    <div class="p-8 border-t border-white/5">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-serif text-white">Family Suites</h3>
+                            <i class="fas fa-users text-[#c25e36]"></i>
+                        </div>
+                        <p class="text-white/60 font-light text-sm leading-relaxed">Expansive, beautifully appointed layouts offering home-like warmth for larger groups and families on vacation.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 (Image 6) -->
+                <div class="image-card bg-[#243d31]" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-img-wrapper">
+                        <img src="13.jpg" alt="Guest Kitchen" class="card-img">
+                    </div>
+                    <div class="p-8 border-t border-white/5">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-2xl font-serif text-white">Guest Kitchen</h3>
+                            <i class="fas fa-fire-burner text-[#c25e36]"></i>
+                        </div>
+                        <p class="text-white/60 font-light text-sm leading-relaxed">A highly sought-after feature allowing guests a separate, fully-equipped space to cook customized meals.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Dining Section (Image 7) -->
+    <section id="dining" class="parallax-dining relative py-32 md:py-40">
+        <div class="absolute inset-0 bg-[#111111]/70 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#1a2e24]/90 to-transparent"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="w-full md:w-1/2" data-aos="fade-right">
+                <span class="bg-[#c25e36] text-white text-[10px] font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-sm mb-6 inline-block">Santosh Bhojnalaya</span>
+                
+                <h2 class="text-5xl md:text-7xl font-serif text-white mb-6 leading-[1.1]">Taste the <br><span class="italic text-white/80">Mountains</span></h2>
+                
+                <p class="text-white/80 font-light leading-relaxed text-base max-w-md mb-8">
+                    Experience our renowned proper Pahadi food. We offer traditional vegetarian and non-vegetarian delicacies prepared with authentic, locally sourced spices.
+                </p>
+
+                <div class="bg-white/10 backdrop-blur-md border-l-4 border-[#c25e36] p-6 max-w-sm">
+                    <div class="flex justify-between items-center mb-2">
+                        <h4 class="text-xl font-serif text-white">Bhutuwa Puri</h4>
+                        <span class="text-[#c25e36] text-[10px] uppercase tracking-widest font-bold">No. 1 in Town</span>
+                    </div>
+                    <p class="text-white/60 text-sm font-light">Our legendary signature dish that brings travelers from all across Uttarakhand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section (Images 8 & 9) -->
+    <!-- Redesigned with beautiful colored boxes and image overlap -->
+    <section id="events" class="py-24 bg-[#f8f5f0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                
+                <!-- Text & Color Boxes -->
+                <div class="w-full lg:w-1/2" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="mb-4">
+                        <span class="accent-line"></span>
+                        <span class="text-[#c25e36] text-[10px] font-bold uppercase tracking-[0.2em]">Grand Banquet Hall</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-serif text-[#1a2e24] mb-6">Host the Perfect Event</h2>
+                    <p class="text-gray-600 font-light leading-relaxed mb-10 text-sm">
+                        An elegantly appointed venue designed to accommodate your most treasured celebrations with flawless service and exquisite catering.
+                    </p>
+
+                    <!-- Redesigned Event Type Boxes (Grid) -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-[#1a2e24] text-white p-5 rounded-xl text-center hover:bg-[#c25e36] transition-colors duration-300">
+                            <h5 class="font-serif text-lg">Ring Ceremony</h5>
+                        </div>
+                        <div class="bg-[#e8e2d5] text-[#1a2e24] p-5 rounded-xl text-center hover:bg-[#c25e36] hover:text-white transition-colors duration-300">
+                            <h5 class="font-serif text-lg">Anniversary</h5>
+                        </div>
+                        <div class="bg-[#c25e36] text-white p-5 rounded-xl text-center hover:bg-[#1a2e24] transition-colors duration-300">
+                            <h5 class="font-serif text-lg">Birthday Party</h5>
+                        </div>
+                        <div class="bg-[#e8e2d5] text-[#1a2e24] p-5 rounded-xl text-center hover:bg-[#1a2e24] hover:text-white transition-colors duration-300">
+                            <h5 class="font-serif text-lg">Naming (Namkaran)</h5>
+                        </div>
+                        <div class="col-span-2 bg-[#1a2e24] text-white p-5 rounded-xl text-center hover:bg-[#c25e36] transition-colors duration-300">
+                            <h5 class="font-serif text-lg">Exclusive Kitty Parties</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Images 8 & 9 -->
+                <div class="w-full lg:w-1/2 h-[500px]" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="overlap-container">
+                        <img src="5.jpeg" alt="Banquet Setup" class="events-img-1" data-aos="fade-down" data-aos-delay="200">
+                        <img src="9.jpeg" alt="Event Details" class="events-img-2" data-aos="fade-up" data-aos-delay="400">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Expeditions Section (Images 10, 11, 12, 13) -->
+    <section id="expeditions" class="py-24 bg-[#111111]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-[#c25e36] text-[10px] font-bold uppercase tracking-[0.2em] block mb-3">Tours & Travel</span>
+                <h2 class="text-4xl md:text-6xl font-serif text-white mb-4">Himalayan Expeditions</h2>
+                <p class="text-white/60 font-light text-sm max-w-2xl mx-auto">
+                    Hotel Meghdoot is the ultimate launchpad for spiritual yatras and high-altitude adventures.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Image 10 -->
+                <div class="group relative overflow-hidden h-80 rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <img src="10.jpeg" alt="Aadi Kailash" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1a2e24] via-black/40 to-transparent opacity-90 group-hover:opacity-80 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <p class="text-[#c25e36] text-[9px] uppercase tracking-[0.2em] font-bold mb-1">Spiritual Yatra</p>
+                        <h3 class="text-2xl font-serif text-white">Aadi Kailash</h3>
+                    </div>
+                </div>
+                
+                <!-- Image 11 -->
+                <div class="group relative overflow-hidden h-80 rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <img src="11.jpeg" alt="Kedarnath & Badrinath" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1a2e24] via-black/40 to-transparent opacity-90 group-hover:opacity-80 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <p class="text-[#c25e36] text-[9px] uppercase tracking-[0.2em] font-bold mb-1">Chardham Route</p>
+                        <h3 class="text-2xl font-serif text-white">Kedarnath & Badrinath</h3>
+                    </div>
+                </div>
+                
+                <!-- Image 12 -->
+                <div class="group relative overflow-hidden h-80 rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                    <img src="17.jpg" alt="Munsyari" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1a2e24] via-black/40 to-transparent opacity-90 group-hover:opacity-80 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <p class="text-[#c25e36] text-[9px] uppercase tracking-[0.2em] font-bold mb-1">Khaliya Top Trek</p>
+                        <h3 class="text-2xl font-serif text-white">Munsyari</h3>
+                    </div>
+                </div>
+                
+                <!-- Image 13 -->
+                <div class="group relative overflow-hidden h-80 rounded-2xl cursor-pointer" data-aos="fade-up" data-aos-delay="400">
+                    <img src="16.jpg" alt="Dharma Valley" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1a2e24] via-black/40 to-transparent opacity-90 group-hover:opacity-80 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <p class="text-[#c25e36] text-[9px] uppercase tracking-[0.2em] font-bold mb-1">Valley Expedition</p>
+                        <h3 class="text-2xl font-serif text-white">Dharma Valley</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Distances Info Bar -->
+    <div class="bg-[#1a2e24] py-10 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-x divide-white/10">
+                <div data-aos="fade-in">
+                    <p class="text-[#c25e36] text-[10px] font-bold uppercase tracking-widest mb-2">Hat Kalika Mandir</p>
+                    <p class="text-white font-serif text-2xl">1.3 km</p>
+                </div>
+                <div data-aos="fade-in" data-aos-delay="100">
+                    <p class="text-[#c25e36] text-[10px] font-bold uppercase tracking-widest mb-2">Patal Bhuvaneshwar</p>
+                    <p class="text-white font-serif text-2xl">12 km</p>
+                </div>
+                <div data-aos="fade-in" data-aos-delay="200">
+                    <p class="text-[#c25e36] text-[10px] font-bold uppercase tracking-widest mb-2">Chaukori</p>
+                    <p class="text-white font-serif text-2xl">35 km</p>
+                </div>
+                <div data-aos="fade-in" data-aos-delay="300">
+                    <p class="text-[#c25e36] text-[10px] font-bold uppercase tracking-widest mb-2">Nepal Border</p>
+                    <p class="text-white font-serif text-2xl">105 km</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#0f1b15] pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+                
+                <div class="md:col-span-5 text-center md:text-left">
+                    <h3 class="text-3xl font-serif text-white tracking-widest mb-6 font-bold">MEGHDOOT<span class="text-[#c25e36]">.</span></h3>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed mb-8 mx-auto md:mx-0 max-w-sm">
+                        Experience the earthy luxury of Gangolihat's finest heritage retreat. Blending premium comfort with the soulful traditions of Uttarakhand.
+                    </p>
+                </div>
+
+                <div class="md:col-span-4 text-center md:text-left">
+                    <h4 class="text-white font-serif text-xl mb-6">The Property</h4>
+                    <p class="text-gray-400 font-light text-sm leading-loose">
+                        Post Office Line, Gangolihat,<br>
+                        Pithoragarh, Uttarakhand 262522<br>
+                        <span class="text-[#c25e36] font-medium text-[10px] uppercase tracking-widest">Near Gangolihat Post Office</span>
+                    </p>
+                </div>
+
+                <div class="md:col-span-3 text-center md:text-left">
+                    <h4 class="text-white font-serif text-xl mb-6">Contact Us</h4>
+                    <ul class="space-y-4 font-light text-sm text-gray-400">
+                        <li>
+                            <span class="block text-[10px] uppercase tracking-widest text-gray-500 mb-1">Mohit Sah</span>
+                            <a href="tel:+917248793026" class="text-white hover:text-[#c25e36] text-lg font-serif transition-colors">+91 72487 93026</a>
+                        </li>
+                        <li>
+                            <span class="block text-[10px] uppercase tracking-widest text-gray-500 mb-1">Nikhil Sah</span>
+                            <a href="tel:+917060710247" class="text-white hover:text-[#c25e36] text-lg font-serif transition-colors">+91 70607 10247</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-gray-500">
+                <p>&copy; 2026 Hotel Meghdoot. All Rights Reserved.</p>
+                <p class="mt-4 md:mt-0 text-[#1a2e24] bg-[#c25e36] px-4 py-1.5 rounded-full font-bold text-white">Designed for Devbhoomi</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS Animations
+        AOS.init({
+            once: true,
+            offset: 50,
+            easing: 'ease-out-cubic',
+        });
+
+        // Floating Nav Scroll Logic
+        window.addEventListener('scroll', function() {
+            const navWrapper = document.getElementById('nav-wrapper');
+            const navbar = document.getElementById('navbar');
+            
+            if (window.scrollY > 50) {
+                navWrapper.classList.remove('pt-6');
+                navWrapper.classList.add('pt-2');
+                navbar.classList.add('nav-scrolled');
+                navbar.classList.remove('py-4', 'bg-[rgba(248,245,240,0.9)]');
+            } else {
+                navWrapper.classList.add('pt-6');
+                navWrapper.classList.remove('pt-2');
+                navbar.classList.remove('nav-scrolled');
+                navbar.classList.add('py-4', 'bg-[rgba(248,245,240,0.9)]');
+            }
+        });
+    </script>
+</body>
+</html>
