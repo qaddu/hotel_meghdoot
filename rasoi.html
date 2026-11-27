@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Pahadi Rasoi — Authentic Kumaoni Restaurant &amp; Kitchen | Hotel Meghdoot, Gangolihat</title>
+    <meta name="description" content="Pahadi Rasoi at Hotel Meghdoot, Gangolihat — an authentic Kumaoni restaurant &amp; kitchen famous for Bhutwa Poori, Kumaoni Thali, Takeaway Parcels, Yatra Tiffins, and Event Catering in Uttarakhand.">
+    <meta name="keywords" content="Pahadi Rasoi Gangolihat, Bhutwa Poori Gangolihat, best restaurant in Gangolihat, Kumaoni kitchen Uttarakhand, Bhatt ki Churkani, Bhang ki Chutney, takeaway food Gangolihat, yatra tiffin service Gangolihat, Hotel Meghdoot restaurant">
+    <meta name="author" content="Pahadi Rasoi — Hotel Meghdoot &amp; Restaurant, Gangolihat">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon (Uses your logo_image.png) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="logo_image.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="logo_image.png">
+    <link rel="apple-touch-icon" href="logo_image.png">
+    <link rel="shortcut icon" type="image/png" href="logo_image.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pahadi Rasoi — Kumaoni Restaurant, Kitchen &amp; Catering | Gangolihat">
+    <meta property="og:description" content="Dine-in, takeaway, yatra tiffins, and authentic slow-cooked Kumaoni cuisine — featuring Gangolihat's famous Bhutwa Poori.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- JSON-LD Restaurant Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Pahadi Rasoi — Hotel Meghdoot & Restaurant",
+      "description": "Authentic Kumaoni restaurant and kitchen in Gangolihat, Uttarakhand, famous for Bhutwa Poori, Kumaoni Thali, takeaway parcels, yatra tiffins, and event catering.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near Post Office Line",
+        "addressLocality": "Gangolihat",
+        "addressRegion": "Uttarakhand",
+        "postalCode": "262522",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 29.6560028,
+        "longitude": 80.0365682
+      },
+      "telephone": "+91-98765-43210",
+      "email": "hotelmeghdootandrestaurant@gmail.com",
+      "priceRange": "₹₹",
+      "servesCuisine": ["Kumaoni", "Pahadi", "North Indian", "Pure Vegetarian", "Jain"],
+      "openingHours": "Mo-Su 07:30-22:30"
+    }
+    </script>
+
+    <!-- Culinary Restaurant Fonts: Fraunces (Food Editorial), Caveat (Chef's Script), Cinzel & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cinzel:wght@500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Dedicated Restaurant & Kitchen Palette + Master Brand Tokens -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        linen: '#FBF8F3',
+                        sand: '#EFE9DF',
+                        iron: {
+                            DEFAULT: '#14110F',
+                            card: '#1E1916',
+                            light: '#29221D'
+                        },
+                        tandoor: {
+                            DEFAULT: '#A84426',
+                            hover: '#8B351B'
+                        },
+                        saffron: {
+                            DEFAULT: '#D99B38',
+                            light: '#F0CC8A'
+                        },
+                        pine: {
+                            DEFAULT: '#182920',
+                            card: '#20362A',
+                            dark: '#122019'
+                        },
+                        terracotta: {
+                            DEFAULT: '#9E5A36',
+                            hover: '#834727'
+                        },
+                        gold: {
+                            DEFAULT: '#C8A26A',
+                            light: '#E3C99E'
+                        },
+                        charcoal: '#1D1A17',
+                        muted: '#615850'
+                    },
+                    fontFamily: {
+                        serif: ['"Fraunces"', 'Georgia', 'serif'],
+                        script: ['"Caveat"', 'cursive'],
+                        display: ['"Cinzel"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Restaurant & Kitchen Custom Animations + Master Header/Logo Scaling -->
+    <style>
+        :root {
+            --ease-luxury: cubic-bezier(0.22, 1, 0.36, 1);
+            --ease-snap: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        body {
+            background-color: #FBF8F3;
+            color: #1D1A17;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .hero-title {
+            font-size: clamp(2.65rem, 5.6vw, 4.75rem);
+            line-height: 1.05;
+            letter-spacing: -0.015em;
+        }
+        .section-title {
+            font-size: clamp(1.95rem, 3.6vw, 3rem);
+            line-height: 1.14;
+            letter-spacing: -0.01em;
+        }
+
+        .kitchen-anchor {
+            scroll-margin-top: 96px;
+        }
+
+        /* Top Saffron Scroll Progress Bar */
+        #scroll-progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            width: 0%;
+            background: linear-gradient(90deg, #A84426 0%, #D99B38 55%, #F5DCA8 100%);
+            z-index: 100;
+            transition: width 0.08s linear;
+            box-shadow: 0 0 12px rgba(217, 155, 56, 0.6);
+        }
+
+        /* Sticky Navbar & Hero-to-Scroll Logo Scaling (Exact Master Match) */
+        #main-navbar {
+            transition: background-color 0.38s ease, box-shadow 0.38s ease, padding 0.38s ease, border-color 0.38s ease;
+        }
+        .nav-logo-img {
+            transform: translateY(6px) scale(1.75);
+            transition: transform 0.38s var(--ease-luxury);
+        }
+        @media (min-width: 640px) {
+            .nav-logo-img {
+                transform: translateY(8px) scale(2.2);
+            }
+        }
+        #main-navbar.scrolled {
+            background-color: rgba(20, 17, 15, 0.96);
+            backdrop-filter: blur(14px);
+            box-shadow: 0 12px 32px -10px rgba(0, 0, 0, 0.5);
+            border-bottom: 1px solid rgba(217, 155, 56, 0.28);
+            padding-top: 0.45rem;
+            padding-bottom: 0.45rem;
+        }
+        #main-navbar.scrolled .nav-logo-img {
+            transform: translateY(0) scale(1.2);
+        }
+
+        .nav-link-draw { position: relative; }
+        .nav-link-draw::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 2px;
+            width: 100%;
+            height: 1.5px;
+            background-color: #D99B38;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.32s var(--ease-luxury);
+        }
+        .nav-link-draw:hover::after,
+        .nav-link-draw.active::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .nav-dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.25s var(--ease-luxury);
+        }
+        .nav-dropdown-wrapper:hover .nav-dropdown-menu,
+        .nav-dropdown-wrapper.open .nav-dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* Button Sheen */
+        .btn-sheen {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-sheen::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -120%;
+            width: 65%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+            transform: skewX(-22deg);
+            transition: left 0.65s var(--ease-luxury);
+            pointer-events: none;
+        }
+        .btn-sheen:hover::after {
+            left: 145%;
+        }
+
+        /* ============================================================= */
+        /* KITCHEN ANIMATION 1: RISING STEAM WISPS OVER HERO DISH        */
+        /* ============================================================= */
+        .steam-wrap {
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 18px;
+            pointer-events: none;
+            z-index: 20;
+        }
+        .steam-wisp {
+            width: 14px;
+            height: 64px;
+            border-radius: 50%;
+            background: linear-gradient(to top, rgba(255, 245, 230, 0.42), transparent);
+            filter: blur(8px);
+            opacity: 0;
+            animation: steamRise 4.2s ease-in-out infinite;
+        }
+        .steam-wisp:nth-child(2) { animation-delay: 1.2s; height: 78px; }
+        .steam-wisp:nth-child(3) { animation-delay: 2.4s; height: 58px; }
+        @keyframes steamRise {
+            0%   { transform: translateY(16px) scaleX(0.8); opacity: 0; }
+            35%  { opacity: 0.7; }
+            100% { transform: translateY(-48px) scaleX(1.6); opacity: 0; }
+        }
+
+        /* ============================================================= */
+        /* KITCHEN ANIMATION 2: SLOW ROTATING CHEF'S SEAL BADGE          */
+        /* ============================================================= */
+        @keyframes spinSlow {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+        }
+        .chef-seal-ring {
+            animation: spinSlow 24s linear infinite;
+        }
+
+        /* Hero Staggered Entrance */
+        .hero-slide-in {
+            opacity: 0;
+            transform: translateY(24px);
+            animation: heroUp 0.9s var(--ease-snap) forwards;
+        }
+        .hs-1 { animation-delay: 0.08s; }
+        .hs-2 { animation-delay: 0.20s; }
+        .hs-3 { animation-delay: 0.34s; }
+        .hs-4 { animation-delay: 0.46s; }
+        @keyframes heroUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ============================================================= */
+        /* KITCHEN ANIMATION 3: DISH PLATE HOVER LIFT & SPICE GLOW       */
+        /* ============================================================= */
+        .kitchen-card {
+            transition: transform 0.42s var(--ease-luxury), box-shadow 0.42s var(--ease-luxury), border-color 0.35s ease;
+        }
+        .kitchen-card:hover {
+            transform: translateY(-7px);
+            border-color: rgba(217, 155, 56, 0.75);
+            box-shadow: 0 24px 48px -18px rgba(20, 17, 15, 0.22);
+        }
+
+        .menu-dish-card {
+            transition: transform 0.32s var(--ease-luxury), border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.32s ease;
+        }
+        .menu-dish-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(168, 68, 38, 0.45);
+            box-shadow: 0 14px 30px -14px rgba(20, 17, 15, 0.16);
+        }
+        .menu-dish-card.selected {
+            border-color: #A84426;
+            background-color: #FFF9F2;
+        }
+
+        /* Clip-Path Dish Reveal */
+        .dish-curtain {
+            clip-path: inset(10% 10% 10% 10% round 22px);
+            opacity: 0;
+            transition: clip-path 1.05s var(--ease-snap), opacity 0.85s ease;
+        }
+        .dish-curtain.in-view {
+            clip-path: inset(0% 0% 0% 0% round 22px);
+            opacity: 1;
+        }
+
+        /* Scroll Reveal System */
+        .reveal-up, .reveal-left, .reveal-right, .reveal-scale, .stagger-item {
+            opacity: 0;
+            will-change: transform, opacity;
+            transition: opacity 0.8s var(--ease-luxury), transform 0.8s var(--ease-luxury);
+        }
+        .reveal-up, .stagger-item { transform: translateY(28px); }
+        .reveal-left { transform: translateX(-32px); }
+        .reveal-right { transform: translateX(32px); }
+        .reveal-scale { transform: scale(0.95); }
+        .in-view {
+            opacity: 1 !important;
+            transform: translate3d(0, 0, 0) scale(1) !important;
+        }
+
+        /* Dish Filter Pop */
+        @keyframes dishPop {
+            from { opacity: 0; transform: translateY(14px) scale(0.97); }
+            to   { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .dish-pop {
+            animation: dishPop 0.4s var(--ease-snap) forwards;
+        }
+
+        /* Veg / Non-Veg Indian Culinary Dot Indicators */
+        .diet-veg {
+            width: 14px; height: 14px; border: 1.5px solid #1E7F43; border-radius: 3px;
+            display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        .diet-veg::after {
+            content: ''; width: 6px; height: 6px; border-radius: 50%; background: #1E7F43;
+        }
+        .diet-nonveg {
+            width: 14px; height: 14px; border: 1.5px solid #B52B27; border-radius: 3px;
+            display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        .diet-nonveg::after {
+            content: ''; width: 6px; height: 6px; border-radius: 50%; background: #B52B27;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal-up, .reveal-left, .reveal-right, .reveal-scale, .stagger-item, .hero-slide-in, .dish-curtain {
+                opacity: 1 !important; transform: none !important; clip-path: none !important; animation: none !important; transition: none !important;
+            }
+            .steam-wisp, .chef-seal-ring { animation: none !important; }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-tandoor selection:text-white">
+
+    <!-- TOP SAFFRON SCROLL PROGRESS BAR -->
+    <div id="scroll-progress-bar" aria-hidden="true"></div>
+
+    <!-- ===================================================================== -->
+    <!-- 1. STICKY HEADER NAVIGATION (EXACT MASTER SYSTEM)                     -->
+    <!-- ===================================================================== -->
+    <header id="main-navbar" class="fixed top-0 left-0 right-0 z-50 py-5 px-4 sm:px-6 lg:px-10 text-white">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+
+            <!-- Custom Brand Logo (logo_image.png) -->
+            <a href="index.html#home" class="flex items-center group shrink-0 h-11 sm:h-12" aria-label="Hotel Meghdoot & Restaurant Home">
+                <img src="logo_image.png" alt="Hotel Meghdoot & Restaurant" class="nav-logo-img h-11 sm:h-12 w-auto object-contain origin-left">
+            </a>
+
+            <!-- Desktop Center Navigation -->
+            <nav class="hidden xl:flex items-center gap-7 text-[13px] font-medium tracking-wide text-white/95" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link-draw hover:text-saffron-light transition-colors py-2">Home</a>
+                <a href="about.html"nav-link-draw hover:text-saffron-light transition-colors py-2">About Us</a>
+
+                <!-- Facility Interactive Dropdown -->
+                <div class="relative nav-dropdown-wrapper" id="facility-dropdown-wrapper">
+                    <button type="button" id="facility-dropdown-btn" class="nav-link-draw flex items-center gap-1.5 hover:text-saffron-light transition-colors py-2 focus:outline-none" aria-expanded="false">
+                        <span>Facility</span>
+                        <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-80"></i>
+                    </button>
+                    <div class="nav-dropdown-menu absolute left-0 top-full pt-2.5">
+                        <div class="bg-iron/95 backdrop-blur-xl border border-saffron/30 rounded-xl shadow-2xl p-2 space-y-1 w-64">
+                            <a href="dinning.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-white/10 transition-colors">
+                                <i data-lucide="bed-double" class="w-4 h-4 text-saffron mt-0.5 shrink-0"></i>
+                                <div>
+                                    <span class="block text-sm font-medium text-white">The Dining Room</span>
+                                    <span class="block text-[11px] text-white/60">Rooms &amp; Separate Kitchen</span>
+                                </div>
+                            </a>
+                            <a href="celebrate.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-white/10 transition-colors">
+                                <i data-lucide="sparkles" class="w-4 h-4 text-saffron mt-0.5 shrink-0"></i>
+                                <div>
+                                    <span class="block text-sm font-medium text-white">Gather &amp; Celebrate</span>
+                                    <span class="block text-[11px] text-white/60">Banquet, Weddings &amp; Events</span>
+                                </div>
+                            </a>
+                            <a href="explore.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-white/10 transition-colors">
+                                <i data-lucide="compass" class="w-4 h-4 text-saffron mt-0.5 shrink-0"></i>
+                                <div>
+                                    <span class="block text-sm font-medium text-white">Explore Uttarakhand</span>
+                                    <span class="block text-[11px] text-white/60">Yatras, Valleys &amp; Custom Tours</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="landofait.html" class="nav-link-draw hover:text-saffron-light transition-colors py-2">Land of Faith</a>
+                <a href="rasoi.html" class="nav-link-draw active text-saffron-light transition-colors py-2">Pahadi Rasoi</a>
+                <a href="index.html#gallery" class="nav-link-draw hover:text-saffron-light transition-colors py-2">Gallery</a>
+                <a href="contact.html"nav-link-draw hover:text-saffron-light transition-colors py-2">Contact Us</a>
+            </nav>
+
+            <!-- Right Actions: Order / Book Table + Mobile Menu Trigger -->
+            <div class="flex items-center gap-3">
+                <a href="#kitchen-order" class="btn-sheen hidden sm:inline-flex items-center gap-2 bg-tandoor hover:bg-tandoor-hover text-white text-xs font-semibold uppercase tracking-[0.18em] px-5 py-2.5 rounded-lg shadow-lg border border-saffron/35 transition-all duration-300">
+                    <span>Order / Book Table</span>
+                </a>
+                <button type="button" id="mobile-menu-open-btn" class="xl:hidden p-2.5 rounded-lg bg-white/10 hover:bg-white/20 border border-saffron/35 text-white transition-colors" aria-label="Open Navigation Menu">
+                    <i data-lucide="menu" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Slide-Out Drawer -->
+    <div id="mobile-drawer" class="fixed inset-0 z-[65] hidden">
+        <div id="mobile-drawer-backdrop" class="absolute inset-0 bg-black/75 backdrop-blur-sm"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-80 max-w-[86vw] bg-iron text-white shadow-2xl border-l border-saffron/25 flex flex-col justify-between p-6 overflow-y-auto">
+            <div>
+                <div class="flex items-center justify-between pb-5 border-b border-white/10">
+                    <img src="logo_image.png" alt="Hotel Meghdoot & Restaurant" class="h-11 w-auto max-w-[180px] object-contain">
+                    <button type="button" id="mobile-menu-close-btn" class="p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white" aria-label="Close Menu">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <nav class="mt-6 flex flex-col space-y-1 text-sm">
+                    <a href="index.html#home" class="mobile-nav-link py-3 px-3 rounded-lg hover:bg-white/10 font-medium">Home</a>
+                    <a href="index.html#our-story" class="mobile-nav-link py-3 px-3 rounded-lg hover:bg-white/10 font-medium">About Us</a>
+
+                    <div class="py-2 px-3">
+                        <span class="block font-display text-[11px] uppercase tracking-[0.22em] text-saffron font-semibold mb-2">Facility</span>
+                        <div class="pl-3 border-l border-saffron/30 flex flex-col space-y-2 text-white/85">
+                            <a href="dinning.html" class="mobile-nav-link py-1.5 hover:text-saffron-light">The Dining Room (Rooms &amp; Kitchen)</a>
+                            <a href="celebrate.html" class="mobile-nav-link py-1.5 hover:text-saffron-light">Gather &amp; Celebrate (Banquet)</a>
+                            <a href="explore.html" class="mobile-nav-link py-1.5 hover:text-saffron-light">Explore Uttarakhand (Tours)</a>
+                        </div>
+                    </div>
+
+                    <a href="landofait.html" class="mobile-nav-link py-3 px-3 rounded-lg hover:bg-white/10 font-medium">Land of Faith</a>
+                    <a href="pahadi-rasoi.html" class="mobile-nav-link py-3 px-3 rounded-lg bg-white/10 text-saffron-light font-semibold">Pahadi Rasoi</a>
+                    <a href="index.html#gallery" class="mobile-nav-link py-3 px-3 rounded-lg hover:bg-white/10 font-medium">Gallery</a>
+                    <a href="index.html#contact-us" class="mobile-nav-link py-3 px-3 rounded-lg hover:bg-white/10 font-medium">Contact Us</a>
+                </nav>
+            </div>
+
+            <div class="pt-6 border-t border-white/10 space-y-3">
+                <a href="#kitchen-order" onclick="closeMobileDrawer()" class="btn-sheen block text-center w-full py-3 rounded-lg bg-tandoor hover:bg-tandoor-hover text-white text-xs font-semibold uppercase tracking-[0.18em] transition-colors">
+                    Order / Book Table
+                </a>
+                <a href="tel:+919876543210" class="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg border border-saffron/30 text-xs text-white/90 hover:bg-white/10 transition-colors">
+                    <i data-lucide="phone" class="w-3.5 h-3.5 text-saffron"></i>
+                    <span>+91 98765 43210</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- ===================================================================== -->
+        <!-- 2. SPLIT-SCREEN BISTRO & OPEN-KITCHEN HERO                            -->
+        <!-- ===================================================================== -->
+        <section class="relative bg-iron text-white pt-32 pb-20 lg:pt-36 lg:pb-24 overflow-hidden">
+            <!-- Subtle Warm Radial Glow -->
+            <div class="absolute -top-24 -right-24 w-[520px] h-[520px] rounded-full bg-tandoor/20 blur-[120px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+
+                    <!-- Left: Restaurant Identity, Live Kitchen Status & CTAs -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="hero-slide-in hs-1 flex flex-wrap items-center gap-3">
+                            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-iron-card border border-saffron/40 text-[11px] font-semibold uppercase tracking-[0.18em] text-saffron-light">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                                Kitchen Open &bull; 7:30 AM – 10:30 PM
+                            </span>
+                            <span class="font-script text-xl text-saffron-light">
+                                Gangolihat &bull; Uttarakhand
+                            </span>
+                        </div>
+
+                        <h1 class="hero-slide-in hs-2 hero-title font-serif font-semibold text-white">
+                            Pahadi Rasoi
+                            <span class="block italic font-normal text-saffron-light mt-1">
+                                Authentic Kumaoni Kitchen &amp; Restaurant
+                            </span>
+                        </h1>
+
+                        <p class="hero-slide-in hs-3 text-sm sm:text-base lg:text-lg text-white/80 font-light leading-relaxed max-w-xl">
+                            A dedicated culinary house by Hotel Meghdoot — serving slow-simmered <strong>Bhutwa Poori</strong>, wholesome Kumaoni Thalis, fresh takeaway parcels, yatra tiffins, and traditional event catering straight from our mountain kitchen.
+                        </p>
+
+                        <div class="hero-slide-in hs-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                            <a href="#interactive-menu" class="btn-sheen inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-tandoor hover:bg-tandoor-hover text-white text-xs font-semibold uppercase tracking-[0.2em] shadow-xl border border-saffron/35 transition-all">
+                                <span>Explore Menu &amp; Pre-Order</span>
+                                <i data-lucide="utensils" class="w-4 h-4"></i>
+                            </a>
+                            <a href="#kitchen-services" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-lg bg-white/10 hover:bg-white/15 border border-saffron/35 text-saffron-light hover:text-white text-xs font-semibold uppercase tracking-[0.2em] transition-all">
+                                <span>Takeaway &amp; Catering</span>
+                            </a>
+                        </div>
+
+                        <!-- Quick Restaurant Highlights -->
+                        <div class="hero-slide-in hs-4 grid grid-cols-3 gap-4 pt-4 border-t border-white/10 max-w-lg text-xs">
+                            <div>
+                                <span class="block font-serif text-xl sm:text-2xl text-saffron-light font-semibold">100%</span>
+                                <span class="text-white/65">Freshly Cooked</span>
+                            </div>
+                            <div>
+                                <span class="block font-serif text-xl sm:text-2xl text-saffron-light font-semibold">Veg &amp; Non-Veg</span>
+                                <span class="text-white/65">Separate Prep</span>
+                            </div>
+                            <div>
+                                <span class="block font-serif text-xl sm:text-2xl text-saffron-light font-semibold">Dine / Parcel</span>
+                                <span class="text-white/65">&amp; Group Tiffins</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Circular Plated Hero Visual + Rising Steam + Spinning Chef Seal -->
+                    <div class="lg:col-span-5 relative flex items-center justify-center pt-6 lg:pt-0">
+                        <div class="relative w-72 h-72 sm:w-96 sm:h-96">
+                            <!-- Rising Steam Animation -->
+                            <div class="steam-wrap" aria-hidden="true">
+                                <span class="steam-wisp"></span>
+                                <span class="steam-wisp"></span>
+                                <span class="steam-wisp"></span>
+                            </div>
+
+                            <!-- Outer Dashed Gold Ring -->
+                            <div class="absolute -inset-4 rounded-full border border-dashed border-saffron/45 chef-seal-ring pointer-events-none"></div>
+
+                            <!-- Main Circular Dish Photo -->
+                            <div class="w-full h-full rounded-full overflow-hidden border-[6px] border-iron-light shadow-2xl bg-iron-card relative">
+                                <img
+                                    src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=900&q=85"
+                                    alt="Signature Kumaoni Spread at Pahadi Rasoi Gangolihat"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                >
+                            </div>
+
+                            <!-- Floating Chef's Signature Badge -->
+                            <div class="absolute -bottom-3 -left-2 sm:-left-6 bg-linen text-charcoal px-5 py-3.5 rounded-2xl shadow-2xl border border-saffron/50 flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-tandoor text-white flex items-center justify-center shrink-0">
+                                    <i data-lucide="flame" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <span class="block font-script text-lg leading-none text-tandoor font-bold">House Famous</span>
+                                    <span class="block font-serif text-lg font-semibold leading-tight">Bhutwa Poori</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================== -->
+        <!-- 3. INSIDE OUR KITCHEN — CULINARY CRAFT (FOOD-FIRST TYPOGRAPHY)        -->
+        <!-- ===================================================================== -->
+        <section class="py-16 lg:py-24 bg-sand border-b border-charcoal/10">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-12 reveal-up">
+                    <span class="font-script text-2xl sm:text-3xl text-tandoor block mb-1">Fresh from the Kumaoni Chulha</span>
+                    <h2 class="section-title font-serif text-charcoal font-semibold">
+                        Honest Flavors, <em class="italic text-tandoor font-normal">Slow-Cooked</em> Daily
+                    </h2>
+                    <p class="mt-2.5 text-sm text-muted">
+                        No shortcuts, no artificial colors—just heirloom mountain grains, hand-pounded spices, and piping hot plates.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 stagger-group">
+                    <div class="stagger-item kitchen-card bg-white rounded-2xl p-7 border border-charcoal/10 shadow-sm">
+                        <span class="font-script text-xl text-tandoor font-semibold">01. Farm to Kadhai</span>
+                        <h3 class="font-serif text-2xl text-charcoal font-semibold mt-1">Pahadi Harvest</h3>
+                        <p class="text-xs sm:text-sm text-muted mt-2 leading-relaxed">
+                            Black Himalayan Bhatt, organic Madua millet, wild Jakhiya seeds, and crisp Gangolihat vegetables picked fresh every morning.
+                        </p>
+                    </div>
+                    <div class="stagger-item kitchen-card bg-white rounded-2xl p-7 border border-charcoal/10 shadow-sm">
+                        <span class="font-script text-xl text-tandoor font-semibold">02. Slow Simmered</span>
+                        <h3 class="font-serif text-2xl text-charcoal font-semibold mt-1">Iron Kadhai Roasting</h3>
+                        <p class="text-xs sm:text-sm text-muted mt-2 leading-relaxed">
+                            Our signature Bhutwa and Kumaoni dals simmer low and slow in seasoned iron cookware for deep, earthy mountain aroma.
+                        </p>
+                    </div>
+                    <div class="stagger-item kitchen-card bg-white rounded-2xl p-7 border border-charcoal/10 shadow-sm">
+                        <span class="font-script text-xl text-tandoor font-semibold">03. Pure &amp; Hygienic</span>
+                        <h3 class="font-serif text-2xl text-charcoal font-semibold mt-1">Dedicated Veg &amp; Jain Prep</h3>
+                        <p class="text-xs sm:text-sm text-muted mt-2 leading-relaxed">
+                            Strict separation between vegetarian, Jain (no onion/garlic), and non-veg counters so every diner eats with total peace of mind.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================== -->
+        <!-- 4. CHEF'S SIGNATURE SPOTLIGHT — BHUTWA POORI                          -->
+        <!-- ===================================================================== -->
+        <section id="bhutwa-poori" class="kitchen-anchor py-20 lg:py-26 bg-linen">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
+                <div class="bg-iron text-white rounded-3xl overflow-hidden shadow-2xl border border-saffron/35 grid grid-cols-1 lg:grid-cols-12">
+
+                    <div class="lg:col-span-6 p-8 sm:p-12 flex flex-col justify-between reveal-left">
+                        <div>
+                            <span class="font-script text-2xl text-saffron-light block mb-1">Chef's Signature &bull; Gangolihat Famous</span>
+                            <h2 class="section-title font-serif text-white font-semibold">
+                                Legendary <em class="italic text-saffron-light font-normal">Bhutwa Poori</em>
+                            </h2>
+                            <p class="mt-4 text-sm sm:text-base text-white/80 leading-relaxed">
+                                Our most-ordered dish by locals and travelers alike. Hand-roasted Kumaoni spices, crushed mountain ginger, and slow-braised richness served piping hot with golden puffed pooris and tangy Bhang ki Chutney.
+                            </p>
+
+                            <!-- Tasting Notes -->
+                            <div class="grid grid-cols-3 gap-3 mt-6 pt-6 border-t border-white/10 text-xs">
+                                <div>
+                                    <span class="block text-saffron uppercase tracking-wider text-[10px] font-semibold">Spice Profile</span>
+                                    <span class="text-white/90 font-medium mt-0.5 block">Warm &amp; Aromatic</span>
+                                </div>
+                                <div>
+                                    <span class="block text-saffron uppercase tracking-wider text-[10px] font-semibold">Served With</span>
+                                    <span class="text-white/90 font-medium mt-0.5 block">Hot Poori &amp; Chutney</span>
+                                </div>
+                                <div>
+                                    <span class="block text-saffron uppercase tracking-wider text-[10px] font-semibold">Availability</span>
+                                    <span class="text-white/90 font-medium mt-0.5 block">Dine-In &amp; Takeaway</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 flex flex-wrap items-center gap-4">
+                            <button type="button" onclick="quickAddDish('Bhutwa Poori (Famous Signature)')" class="btn-sheen px-6 py-3.5 rounded-lg bg-tandoor hover:bg-tandoor-hover text-white text-xs font-semibold uppercase tracking-[0.18em] shadow-lg transition-colors">
+                                + Add to Pre-Order Tray
+                            </button>
+                            <a href="#kitchen-order" class="text-xs font-semibold uppercase tracking-[0.16em] text-saffron-light hover:text-white transition-colors">
+                                Reserve Table &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 p-6 sm:p-8 flex items-center justify-center bg-iron-card">
+                        <div class="dish-curtain w-full aspect-[4/3] overflow-hidden shadow-2xl border border-saffron/30">
+                            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=85" alt="Famous Bhutwa Poori at Pahadi Rasoi Gangolihat" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================== -->
+        <!-- 5. INTERACTIVE RESTAURANT MENU + LIVE PRE-ORDER TRAY                  -->
+        <!-- ===================================================================== -->
+        <section id="interactive-menu" class="kitchen-anchor py-20 lg:py-28 bg-sand">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+                <!-- Header -->
+                <div class="text-center max-w-2xl mx-auto mb-10 reveal-up">
+                    <span class="font-script text-2xl sm:text-3xl text-tandoor block mb-1">Handcrafted in Gangolihat</span>
+                    <h2 class="section-title font-serif text-charcoal font-semibold">
+                        What's Cooking <em class="italic text-tandoor font-normal">Today</em>
+                    </h2>
+                    <p class="mt-2.5 text-sm text-muted">
+                        Tap <strong>+ Add</strong> on any dish to build your Dine-In Pre-Order or Takeaway list—it fills directly into your order form below.
+                    </p>
+                </div>
+
+                <!-- Filter Bar (Categories + Veg-Only Switch) -->
+                <div class="flex flex-wrap items-center justify-center gap-2.5 mb-10 reveal-up">
+                    <button type="button" data-cat="all" class="m-tab px-5 py-2 rounded-full text-xs font-semibold bg-iron text-white shadow-sm transition-all">All Menu</button>
+                    <button type="button" data-cat="pahadi" class="m-tab px-5 py-2 rounded-full text-xs font-medium bg-white text-charcoal border border-charcoal/15 hover:bg-iron hover:text-white transition-all">Pahadi Specials</button>
+                    <button type="button" data-cat="mains" class="m-tab px-5 py-2 rounded-full text-xs font-medium bg-white text-charcoal border border-charcoal/15 hover:bg-iron hover:text-white transition-all">North Indian Mains</button>
+                    <button type="button" data-cat="breakfast" class="m-tab px-5 py-2 rounded-full text-xs font-medium bg-white text-charcoal border border-charcoal/15 hover:bg-iron hover:text-white transition-all">Breakfast &amp; Snacks</button>
+                    <button type="button" data-cat="drinks" class="m-tab px-5 py-2 rounded-full text-xs font-medium bg-white text-charcoal border border-charcoal/15 hover:bg-iron hover:text-white transition-all">Beverages</button>
+                    <label class="inline-flex items-center gap-2 ml-2 px-4 py-2 rounded-full bg-white border border-emerald-700/30 text-xs font-semibold text-emerald-800 cursor-pointer select-none">
+                        <input type="checkbox" id="veg-only-toggle" class="accent-emerald-700 w-3.5 h-3.5">
+                        <span>Pure Veg Only</span>
+                    </label>
+                </div>
+
+                <!-- Menu Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="restaurant-menu-grid">
+
+                    <!-- 1. Bhutwa Poori -->
+                    <div class="menu-dish-card bg-white rounded-2xl p-5 border border-charcoal/10 flex flex-col justify-between" data-cat="pahadi" data-diet="nonveg" data-dish="Bhutwa Poori (Famous Signature)">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="diet-nonveg" title="Non-Veg"></span>
+                                <span class="text-[10px] font-semibold uppercase tracking-[0.14em] px-2.5 py-0.5 rounded-full bg-tandoor text-white">Famous Dish</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-charcoal">Bhutwa Poori</h3>
+                            <p class="text-xs text-muted mt-1.5 leading-relaxed">Signature slow-cooked Kumaoni delicacy served piping hot with golden puffed pooris &amp; local chutney.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-sand flex items-center justify-between">
+                            <span class="font-script text-lg font-semibold text-tandoor">Pahadi Special</span>
+                            <button type="button" onclick="toggleDishInTray(this)" class="add-dish-btn text-xs font-semibold px-3.5 py-1.5 rounded-lg bg-sand hover:bg-iron hover:text-white text-charcoal transition-colors">+ Add</button>
+                        </div>
+                    </div>
+
+                    <!-- 2. Authentic Kumaoni Thali -->
+                    <div class="menu-dish-card bg-white rounded-2xl p-5 border border-charcoal/10 flex flex-col justify-between" data-cat="pahadi" data-diet="veg" data-dish="Authentic Kumaoni Thali (Pure Veg)">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="diet-veg" title="Pure Veg"></span>
+                                <span class="text-[10px] font-semibold uppercase tracking-[0.14em] px-2.5 py-0.5 rounded-full bg-pine text-gold-light">Bestseller</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-charcoal">Authentic Kumaoni Thali</h3>
+                            <p class="text-xs text-muted mt-1.5 leading-relaxed">Bhatt ki Churkani, Aloo ke Gutke, Kumaoni Raita, Bhang ki Chutney, Madua Roti &amp; steamed rice.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-sand flex items-center justify-between">
+                            <span class="font-script text-lg font-semibold text-emerald-800">Pure Veg</span>
+                            <button type="button" onclick="toggleDishInTray(this)" class="add-dish-btn text-xs font-semibold px-3.5 py-1.5 rounded-lg bg-sand hover:bg-iron hover:text-white text-charcoal transition-colors">+ Add</button>
+                        </div>
+                    </div>
+
+                    <!-- 3. Bhatt ki Churkani & Rice -->
+                    <div class="menu-dish-card bg-white rounded-2xl p-5 border border-charcoal/10 flex flex-col justify-between" data-cat="pahadi" data-diet="veg" data-dish="Bhatt ki Churkani & Steamed Rice">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="diet-veg" title="Pure Veg"></span>
+                                <span class="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted">Iron Kadhai</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-charcoal">Bhatt ki Churkani &amp; Rice</h3>
+                            <p class="text-xs text-muted mt-1.5 leading-relaxed">Heirloom black soybeans simmered with roasted flour and jakhiya tempering, served with hot rice.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-sand flex items-center justify-between">
+                            <span class="font-script text-lg font-semibold text-emerald-800">Pure Veg</span>
+                            <button type="button" onclick="toggleDishInTray(this)" class="add-dish-btn text-xs font-semibold px-3.5 py-1.5 rounded-lg bg-sand hover:bg-iron hover:text-white text-charcoal transition-colors">+ Add</button>
+                        </div>
+                    </div>
+
+                    <!-- 4. Pahadi Chicken Curry -->
+                    <div class="menu-dish-card bg-white rounded-2xl p-5 border border-charcoal/10 flex flex-col justify-between" data-cat="mains" data-diet="nonveg" data-dish="Pahadi Chicken Curry">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="diet-nonveg" title="Non-Veg"></span>
+                                <span class="text-[10px] font-semibold uppercase tracking-[0.14em] text-tandoor">Chef's Pick</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-charcoal">Pahadi Chicken Curry</h3>
+                            <p class="text-xs text-muted mt-1.5 leading-relaxed">Homestyle mountain chicken slow-cooked with freshly ground local spices, coriander, and ginger.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-sand flex items-center justify-between">
+                            <span class="font-script text-lg font-semibold text-tandoor">Main Course</span>
+                            <button type="button" onclick="toggleDishInTray(this)" class="add-dish-btn text-xs font-semibold px-3.5 py-1.5 rounded-lg bg-sand hover:bg-iron hover:text-white text-charcoal transition-colors">+ Add</button>
+                        </div>
+                    </div>
+
+                    <!-- 5. Kadhai Paneer & Dal Tadka -->
+                    <div class="menu-dish-card bg-white rounded-2xl p-5 border border-charcoal/10 flex flex-col justify-between" data-cat="mains" data-diet="veg" data-dish="Kadhai Paneer & Dal Tadka Combo">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="diet-veg" title="Pure Veg"></span>
+                                <span class="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted">North Indian</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-charcoal">Kadhai Paneer &amp; Dal Tadka</h3>
+                            <p class="text-xs text-muted mt-1.5 leading-relaxed">Fresh cottage cheese tossed with bell peppers and ghee-tempered yellow lentils with hot tawa rotis.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-sand flex items-center justify-between">
+                            <span class="font-script text-lg font-semibold text-emerald-800">Pure Veg</span>
+                            <button type="button" onclick="toggleDishInTray(this)" class="add-dish-btn text-xs font-semibold px-3.5 py-1.5 rounded-lg bg-sand hover:bg-iron hover:text-white text-charcoal transition-colors">+ Add</button>
+                        </div>
+                    </div>
+
+                    <!-- 6. Sattvik / Jain Thali -->
+                    <div class="menu-dish-card bg-white rounded-2xl p-5 border border-charcoal/10 flex flex-col justify-between" data-cat="mains" data-diet="veg" data-dish="Sattvik / Jain Thali (No Onion/Garlic)">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="diet-veg" title="Pure Veg"></span>
+                                <span class="text-[10px] font-semibold uppercase tracking-[0.14em] px-2.5 py-0.5 rounded-full bg-emerald-800 text-white">Jain Friendly</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-charcoal">Sattvik / Jain Thali</h3>
+                            <p class="text-xs text-muted mt-1.5 leading-relaxed">Prepared strictly without onion or garlic—ideal for devotees visiting Maa Haat Kalika &amp; Patal Bhuvaneshwar.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-sand flex items-center justify-between">
+                            <span class="font-script text-lg font-semibold text-emerald-800">No Onion/Garlic</span>
+                            <button type="button" onclick="toggleDishInTray(this)" class="add-dish-btn text-xs font-semibold px-3.5 py-1.5 rounded-lg bg-sand hover:bg-iron hover:text-white text-charcoal transition-colors">+ Add</button>
+                        </div>
+                    </div>
+
+                    <!-- 7. Stuffed Mountain Parathas -->
+                    <div class="menu-dish-card bg-white rounded-2xl p-5 border border-charcoal/10 flex flex-col justify-between" data-cat="breakfast" data-diet="veg" data-dish="Stuffed Aloo/Paneer Parathas with Curd">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="diet-veg" title="Pure Veg"></span>
+                                <span class="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted">Morning</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-charcoal">Stuffed Parathas &amp; Curd</h3>
+                            <p class="text-xs text-muted mt-1.5 leading-relaxed">Crisp tawa-griddled Aloo, Gobhi, or Paneer parathas served with fresh curd, white butter, and pickle.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-sand flex items-center justify-between">
+                            <span class="font-script text-lg font-semibold text-emerald-800">Breakfast</span>
+                            <button type="button" onclick="toggleDishInTray(this)" class="add-dish-btn text-xs font-semibold px-3.5 py-1.5 rounded-lg bg-sand hover:bg-iron hover:text-white text-charcoal transition-colors">+ Add</button>
+                        </div>
+                    </div>
+
+                    <!-- 8. Buransh Squash -->
+                    <div class="menu-dish-card bg-white rounded-2xl p-5 border border-charcoal/10 flex flex-col justify-between" data-cat="drinks" data-diet="veg" data-dish="Chilled Buransh (Rhododendron) Squash">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="diet-veg" title="Pure Veg"></span>
+                                <span class="text-[10px] font-semibold uppercase tracking-[0.14em] text-tandoor">Mountain Cooler</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-charcoal">Buransh Squash</h3>
+                            <p class="text-xs text-muted mt-1.5 leading-relaxed">Refreshing ruby-red Himalayan rhododendron flower drink served chilled with a hint of lemon.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-sand flex items-center justify-between">
+                            <span class="font-script text-lg font-semibold text-emerald-800">Beverage</span>
+                            <button type="button" onclick="toggleDishInTray(this)" class="add-dish-btn text-xs font-semibold px-3.5 py-1.5 rounded-lg bg-sand hover:bg-iron hover:text-white text-charcoal transition-colors">+ Add</button>
+                        </div>
+                    </div>
+
+                    <!-- 9. Kumaoni Adrak Chai -->
+                    <div class="menu-dish-card bg-white rounded-2xl p-5 border border-charcoal/10 flex flex-col justify-between" data-cat="drinks" data-diet="veg" data-dish="Kumaoni Adrak Masala Chai">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="diet-veg" title="Pure Veg"></span>
+                                <span class="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted">All Day</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-charcoal">Kumaoni Adrak Chai</h3>
+                            <p class="text-xs text-muted mt-1.5 leading-relaxed">Strong mountain tea brewed with freshly crushed local ginger, green cardamom, and rich milk.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-sand flex items-center justify-between">
+                            <span class="font-script text-lg font-semibold text-emerald-800">Hot Beverage</span>
+                            <button type="button" onclick="toggleDishInTray(this)" class="add-dish-btn text-xs font-semibold px-3.5 py-1.5 rounded-lg bg-sand hover:bg-iron hover:text-white text-charcoal transition-colors">+ Add</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Live Selected Tray Bar -->
+                <div id="preorder-tray-bar" class="hidden mt-8 bg-iron text-white rounded-2xl p-5 border border-saffron/45 shadow-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div>
+                        <span class="font-script text-xl text-saffron-light block leading-none">Your Pre-Order / Table Selection (<span id="tray-count">0</span>)</span>
+                        <p id="tray-summary" class="text-xs sm:text-sm text-white/90 mt-1.5"></p>
+                    </div>
+                    <a href="#kitchen-order" class="btn-sheen shrink-0 px-6 py-2.5 rounded-lg bg-tandoor hover:bg-tandoor-hover text-white text-xs font-semibold uppercase tracking-[0.18em] transition-colors">
+                        Confirm Order &darr;
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================================================================== -->
+        <!-- 6. RESTAURANT & KITCHEN SERVICES (SIDE-BUSINESS WING)                 -->
+        <!-- ===================================================================== -->
+        <section id="kitchen-services" class="kitchen-anchor py-20 lg:py-26 bg-linen">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-14 reveal-up">
+                    <span class="font-script text-2xl sm:text-3xl text-tandoor block mb-1">Dine-In, Takeaway &amp; Feasts</span>
+                    <h2 class="section-title font-serif text-charcoal font-semibold">
+                        Serving Gangolihat <em class="italic text-tandoor font-normal">Every Way</em>
+                    </h2>
+                    <p class="mt-2.5 text-sm text-muted">Whether you are passing through Gangolihat, heading to Adi Kailash, or hosting a family feast, Pahadi Rasoi serves you fresh.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger-group">
+                    <div class="stagger-item kitchen-card bg-white rounded-2xl p-6 border border-charcoal/10 shadow-sm">
+                        <div class="w-11 h-11 rounded-xl bg-iron text-saffron flex items-center justify-center mb-4">
+                            <i data-lucide="utensils" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-semibold text-charcoal">Family Dine-In</h3>
+                        <p class="text-xs text-muted mt-2 leading-relaxed">Warm, clean restaurant seating for families, couples, and travelers right in the heart of Gangolihat.</p>
+                    </div>
+
+                    <div class="stagger-item kitchen-card bg-white rounded-2xl p-6 border border-charcoal/10 shadow-sm">
+                        <div class="w-11 h-11 rounded-xl bg-iron text-saffron flex items-center justify-center mb-4">
+                            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-semibold text-charcoal">Fresh Takeaway</h3>
+                        <p class="text-xs text-muted mt-2 leading-relaxed">Call ahead or pre-order online for quick, spill-proof hot parcels of Bhutwa Poori, Thalis &amp; snacks.</p>
+                    </div>
+
+                    <div class="stagger-item kitchen-card bg-white rounded-2xl p-6 border border-charcoal/10 shadow-sm">
+                        <div class="w-11 h-11 rounded-xl bg-iron text-saffron flex items-center justify-center mb-4">
+                            <i data-lucide="package" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-semibold text-charcoal">Yatra Tiffin Packs</h3>
+                        <p class="text-xs text-muted mt-2 leading-relaxed">Early-morning packed pure-veg breakfasts and travel meals for Adi Kailash, Munsiyari &amp; temple trips.</p>
+                    </div>
+
+                    <div class="stagger-item kitchen-card bg-white rounded-2xl p-6 border border-charcoal/10 shadow-sm">
+                        <div class="w-11 h-11 rounded-xl bg-iron text-saffron flex items-center justify-center mb-4">
+                            <i data-lucide="chef-hat" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-semibold text-charcoal">Event Catering</h3>
+                        <p class="text-xs text-muted mt-2 leading-relaxed">Full Kumaoni &amp; multi-cuisine catering for weddings, birthdays, and corporate gatherings in our Banquet Hall.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================== -->
+        <!-- 7. DIRECT KITCHEN ORDER, TABLE BOOKING & CATERING FORM                -->
+        <!-- ===================================================================== -->
+        <section id="kitchen-order" class="kitchen-anchor py-20 lg:py-28 bg-sand">
+            <div class="max-w-4xl mx-auto px-5 sm:px-6 lg:px-10">
+                <div class="bg-white rounded-3xl p-7 sm:p-10 lg:p-12 border border-saffron/40 shadow-xl reveal-scale">
+                    <div class="text-center max-w-xl mx-auto mb-8">
+                        <span class="font-script text-2xl sm:text-3xl text-tandoor block mb-1">Straight to Our Chefs</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl text-charcoal font-semibold">
+                            Reserve a Table or <em class="italic text-tandoor font-normal">Pre-Order</em>
+                        </h2>
+                        <p class="text-xs sm:text-sm text-muted mt-2">
+                            Reserve a table, schedule a takeaway pickup, or enquire about group catering—sent straight to our kitchen.
+                        </p>
+                    </div>
+
+                    <form id="kitchen-order-form" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="ko-name" class="block text-[11px] font-semibold uppercase tracking-[0.14em] text-muted mb-2">Full Name *</label>
+                                <input id="ko-name" type="text" required placeholder="Your full name" class="w-full px-4 py-3.5 rounded-lg bg-linen border border-charcoal/15 text-sm text-charcoal focus:outline-none focus:bg-white focus:border-tandoor transition-all">
+                            </div>
+                            <div>
+                                <label for="ko-phone" class="block text-[11px] font-semibold uppercase tracking-[0.14em] text-muted mb-2">Phone / WhatsApp *</label>
+                                <input id="ko-phone" type="tel" required placeholder="+91 98XXXXXXXX" class="w-full px-4 py-3.5 rounded-lg bg-linen border border-charcoal/15 text-sm text-charcoal focus:outline-none focus:bg-white focus:border-tandoor transition-all">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                            <div>
+                                <label for="ko-service" class="block text-[11px] font-semibold uppercase tracking-[0.14em] text-muted mb-2">Service Type *</label>
+                                <select id="ko-service" class="w-full px-4 py-3.5 rounded-lg bg-linen border border-charcoal/15 text-sm text-charcoal focus:outline-none focus:bg-white focus:border-tandoor transition-all">
+                                    <option value="Dine-In Table Reservation">Dine-In Table Reservation</option>
+                                    <option value="Takeaway / Parcel Pickup">Takeaway / Parcel Pickup</option>
+                                    <option value="Yatra Tiffin Packs">Yatra Tiffin Packs</option>
+                                    <option value="Group / Event Catering">Group / Event Catering</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="ko-date" class="block text-[11px] font-semibold uppercase tracking-[0.14em] text-muted mb-2">Date *</label>
+                                <input id="ko-date" type="date" required class="w-full px-4 py-3.5 rounded-lg bg-linen border border-charcoal/15 text-sm text-charcoal focus:outline-none focus:bg-white focus:border-tandoor transition-all">
+                            </div>
+                            <div>
+                                <label for="ko-guests" class="block text-[11px] font-semibold uppercase tracking-[0.14em] text-muted mb-2">Guests / Plates</label>
+                                <input id="ko-guests" type="number" min="1" value="4" class="w-full px-4 py-3.5 rounded-lg bg-linen border border-charcoal/15 text-sm text-charcoal focus:outline-none focus:bg-white focus:border-tandoor transition-all">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="ko-dishes" class="block text-[11px] font-semibold uppercase tracking-[0.14em] text-muted mb-2">Selected Dishes / Notes &amp; Arrival Time</label>
+                            <textarea id="ko-dishes" rows="3" placeholder="e.g., 4 plates Bhutwa Poori, 2 Kumaoni Thalis, arriving around 1:30 PM..." class="w-full px-4 py-3.5 rounded-lg bg-linen border border-charcoal/15 text-sm text-charcoal focus:outline-none focus:bg-white focus:border-tandoor transition-all resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-sheen w-full py-4 rounded-lg bg-tandoor hover:bg-tandoor-hover text-white text-xs font-semibold uppercase tracking-[0.2em] shadow-lg transition-colors">
+                            Send Kitchen Request
+                        </button>
+                        <p id="kitchen-form-status" class="hidden text-xs sm:text-sm font-medium rounded-lg px-4 py-3" role="alert"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================================================================== -->
+    <!-- 8. MULTI-COLUMN FOOTER (EXACT MASTER SYSTEM WITH ALL LINKS)           -->
+    <!-- ===================================================================== -->
+    <footer class="bg-pine text-white/80 pt-16 pb-8 border-t border-gold/25">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+
+                <!-- Custom Brand Logo (Larger) & Inline SVG Social Icons (Instagram & Facebook Only) -->
+                <div class="space-y-4">
+                    <a href="index.html#home" class="inline-block" aria-label="Hotel Meghdoot & Restaurant Home">
+                        <img src="logo_image.png" alt="Hotel Meghdoot & Restaurant" class="h-24 sm:h-28 w-auto max-w-[300px] object-contain">
+                    </a>
+                    <p class="text-xs leading-relaxed text-white/70">
+                        A serene Himalayan sanctuary in Gangolihat offering Kumaoni hospitality, restful rooms, Separate Kitchen, authentic Pahadi Rasoi, banquet celebrations, and Uttarakhand yatra assistance.
+                    </p>
+                    <div class="flex items-center gap-3 pt-1">
+                        <!-- Instagram Inline SVG -->
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 hover:bg-terracotta text-gold-light hover:text-white border border-gold/30 flex items-center justify-center transition-colors">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <!-- Facebook Inline SVG -->
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 hover:bg-terracotta text-gold-light hover:text-white border border-gold/30 flex items-center justify-center transition-colors">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sitemap -->
+                <div>
+                    <h4 class="font-display text-xs font-semibold uppercase tracking-[0.22em] text-gold mb-4">Sitemap</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><a href="index.html#home" class="hover:text-gold-light transition-colors">Home</a></li>
+                        <li><a href="index.html#our-story" class="hover:text-gold-light transition-colors">About Us</a></li>
+                        <li><a href="index.html#our-services" class="hover:text-gold-light transition-colors">Our Services</a></li>
+                        <li><a href="landofait.html" class="hover:text-gold-light transition-colors">Land of Faith (Divine Abode)</a></li>
+                        <li><a href="pahadi-rasoi.html" class="text-gold-light font-semibold">Pahadi Rasoi &amp; Bhutwa Poori</a></li>
+                        <li><a href="index.html#gallery" class="hover:text-gold-light transition-colors">Gallery</a></li>
+                        <li><a href="index.html#contact-us" class="hover:text-gold-light transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Facility Sub-Menus -->
+                <div>
+                    <h4 class="font-display text-xs font-semibold uppercase tracking-[0.22em] text-gold mb-4">Facility</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><a href="dinning.html" class="hover:text-gold-light transition-colors">The Dining Room &amp; Rooms</a></li>
+                        <li><a href="dinning.html#separate-kitchen" class="hover:text-gold-light transition-colors">Separate Kitchen Facility</a></li>
+                        <li><a href="celebrate.html" class="hover:text-gold-light transition-colors">Gather &amp; Celebrate (Banquet)</a></li>
+                        <li><a href="explore.html" class="hover:text-gold-light transition-colors">Explore Uttarakhand Tours</a></li>
+                        <li><a href="#bhutwa-poori" class="hover:text-gold-light transition-colors">Signature Bhutwa Poori</a></li>
+                        <li><a href="#interactive-menu" class="hover:text-gold-light transition-colors">Interactive Kitchen Menu</a></li>
+                    </ul>
+                </div>
+
+                <!-- Visit Us -->
+                <div>
+                    <h4 class="font-display text-xs font-semibold uppercase tracking-[0.22em] text-gold mb-4">Visit Us</h4>
+                    <ul class="space-y-3 text-xs text-white/75">
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
+                            <span>Near Post Office Line, Gangolihat, Uttarakhand 262522</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="phone" class="w-4 h-4 text-gold shrink-0"></i>
+                            <a href="tel:+919876543210" class="hover:text-white transition-colors">+91 98765 43210</a>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="mail" class="w-4 h-4 text-gold shrink-0"></i>
+                            <a href="mailto:hotelmeghdootandrestaurant@gmail.com" class="hover:text-white transition-colors break-all">hotelmeghdootandrestaurant@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-white/55">
+                <p>&copy; <span id="current-year"></span> Hotel Meghdoot &amp; Restaurant, Gangolihat. All rights reserved.</p>
+                <p>Pahadi Rasoi Kitchen &bull; Devbhoomi Uttarakhand</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP & BACK-TO-TOP BUTTONS -->
+    <div class="fixed bottom-6 right-5 z-[60] flex flex-col items-end gap-3">
+        <button type="button" id="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-11 h-11 rounded-full bg-iron/95 hover:bg-tandoor text-saffron hover:text-white border border-saffron/45 shadow-xl flex items-center justify-center opacity-0 pointer-events-none translate-y-4 transition-all duration-300" aria-label="Back to top">
+            <i data-lucide="chevron-up" class="w-5 h-5"></i>
+        </button>
+
+        <a href="https://wa.me/919876543210?text=Hello%20Pahadi%20Rasoi%20(Hotel%20Meghdoot)%2C%20I%20would%20like%20to%20book%20a%20table%20or%20place%20a%20pre-order." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 bg-[#1F6E43] hover:bg-[#175533] text-white px-4 py-3 rounded-full shadow-2xl border border-white/20 transition-all duration-300" aria-label="Chat on WhatsApp">
+            <i data-lucide="message-circle" class="w-5 h-5 shrink-0"></i>
+            <span class="hidden sm:inline text-xs font-semibold tracking-wide">WhatsApp Kitchen</span>
+        </a>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast-notification" class="fixed bottom-24 right-5 z-[90] max-w-sm bg-iron text-white px-5 py-4 rounded-xl shadow-2xl border border-saffron/45 flex items-start gap-3 translate-y-16 opacity-0 pointer-events-none transition-all duration-300">
+        <i data-lucide="check-circle-2" class="w-5 h-5 text-saffron shrink-0 mt-0.5"></i>
+        <p id="toast-message" class="text-xs sm:text-sm leading-relaxed text-white/95"></p>
+    </div>
+
+    <!-- INTERACTIVE RESTAURANT JAVASCRIPT -->
+    <script>
+        const HOTEL_EMAIL = 'hotelmeghdootandrestaurant@gmail.com';
+        const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${HOTEL_EMAIL}`;
+        const selectedDishes = new Set();
+        let activeCategory = 'all';
+        let toastTimer = null;
+
+        function showToast(message, isError = false) {
+            const toast = document.getElementById('toast-notification');
+            const msgEl = document.getElementById('toast-message');
+            if (!toast || !msgEl) return;
+            msgEl.textContent = message;
+            toast.classList.toggle('border-red-400/70', isError);
+            toast.classList.toggle('border-saffron/45', !isError);
+            toast.classList.remove('translate-y-16', 'opacity-0', 'pointer-events-none');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                toast.classList.add('translate-y-16', 'opacity-0', 'pointer-events-none');
+            }, 4800);
+        }
+
+        function syncPreorderTray() {
+            const trayBar = document.getElementById('preorder-tray-bar');
+            const trayCount = document.getElementById('tray-count');
+            const traySummary = document.getElementById('tray-summary');
+            const dishesField = document.getElementById('ko-dishes');
+            const list = Array.from(selectedDishes);
+
+            if (trayCount) trayCount.textContent = list.length;
+            if (traySummary) traySummary.textContent = list.join(' • ');
+            if (trayBar) trayBar.classList.toggle('hidden', list.length === 0);
+            if (dishesField && list.length > 0) {
+                dishesField.value = `Selected Dishes: ${list.join(', ')}\nPreferred Time / Notes: `;
+            }
+        }
+
+        function toggleDishInTray(btn) {
+            const card = btn.closest('.menu-dish-card');
+            if (!card) return;
+            const dish = card.getAttribute('data-dish');
+            if (selectedDishes.has(dish)) {
+                selectedDishes.delete(dish);
+                card.classList.remove('selected');
+                btn.textContent = '+ Add';
+                btn.classList.remove('bg-tandoor', 'text-white');
+                btn.classList.add('bg-sand', 'text-charcoal');
+            } else {
+                selectedDishes.add(dish);
+                card.classList.add('selected');
+                btn.textContent = '✓ Added';
+                btn.classList.remove('bg-sand', 'text-charcoal');
+                btn.classList.add('bg-tandoor', 'text-white');
+                showToast(`Added "${dish}" to your Pre-Order Tray.`);
+            }
+            syncPreorderTray();
+        }
+
+        function quickAddDish(dishName) {
+            selectedDishes.add(dishName);
+            document.querySelectorAll(`.menu-dish-card[data-dish="${dishName}"]`).forEach((card) => {
+                card.classList.add('selected');
+                const btn = card.querySelector('.add-dish-btn');
+                if (btn) {
+                    btn.textContent = '✓ Added';
+                    btn.classList.remove('bg-sand', 'text-charcoal');
+                    btn.classList.add('bg-tandoor', 'text-white');
+                }
+            });
+            syncPreorderTray();
+            showToast(`Added "${dishName}" to your Pre-Order Tray.`);
+            document.getElementById('kitchen-order').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function applyMenuFilters() {
+            const vegOnly = document.getElementById('veg-only-toggle')?.checked || false;
+            document.querySelectorAll('.menu-dish-card').forEach((card) => {
+                const cat = card.getAttribute('data-cat');
+                const diet = card.getAttribute('data-diet');
+                const matchCat = activeCategory === 'all' || cat === activeCategory;
+                const matchDiet = !vegOnly || diet === 'veg';
+                const show = matchCat && matchDiet;
+                card.style.display = show ? 'flex' : 'none';
+                if (show) {
+                    card.classList.remove('dish-pop');
+                    void card.offsetWidth;
+                    card.classList.add('dish-pop');
+                }
+            });
+        }
+
+        function closeMobileDrawer() {
+            const drawer = document.getElementById('mobile-drawer');
+            if (drawer) drawer.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.lucide) lucide.createIcons();
+            const yearEl = document.getElementById('current-year');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+            const progressBar = document.getElementById('scroll-progress-bar');
+            const navbar = document.getElementById('main-navbar');
+            const backToTopBtn = document.getElementById('back-to-top-btn');
+
+            const onScroll = () => {
+                const scrollY = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = docHeight > 0 ? (scrollY / docHeight) * 100 : 0;
+
+                if (progressBar) progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+                if (navbar) navbar.classList.toggle('scrolled', scrollY > 48);
+                if (backToTopBtn) {
+                    if (scrollY > 420) {
+                        backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+                    } else {
+                        backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+                    }
+                }
+            };
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+
+            // Scroll Reveal Observer
+            const revealEls = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-scale, .stagger-item, .dish-curtain');
+            document.querySelectorAll('.stagger-group').forEach((group) => {
+                group.querySelectorAll('.stagger-item').forEach((item, idx) => {
+                    item.style.transitionDelay = `${Math.min(idx * 90, 450)}ms`;
+                });
+            });
+
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('in-view');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+                revealEls.forEach((el) => observer.observe(el));
+                setTimeout(() => {
+                    revealEls.forEach((el) => {
+                        const rect = el.getBoundingClientRect();
+                        if (rect.top < window.innerHeight + 180) el.classList.add('in-view');
+                    });
+                }, 400);
+            } else {
+                revealEls.forEach((el) => el.classList.add('in-view'));
+            }
+
+            // Menu Category Tabs & Veg-Only Filter
+            const tabs = document.querySelectorAll('.m-tab');
+            tabs.forEach((tab) => {
+                tab.addEventListener('click', () => {
+                    activeCategory = tab.getAttribute('data-cat');
+                    tabs.forEach((t) => {
+                        t.classList.remove('bg-iron', 'text-white', 'shadow-sm', 'font-semibold');
+                        t.classList.add('bg-white', 'text-charcoal', 'font-medium');
+                    });
+                    tab.classList.remove('bg-white', 'text-charcoal', 'font-medium');
+                    tab.classList.add('bg-iron', 'text-white', 'shadow-sm', 'font-semibold');
+                    applyMenuFilters();
+                });
+            });
+
+            const vegToggle = document.getElementById('veg-only-toggle');
+            if (vegToggle) vegToggle.addEventListener('change', applyMenuFilters);
+
+            // Desktop Dropdown
+            const facilityWrapper = document.getElementById('facility-dropdown-wrapper');
+            const facilityBtn = document.getElementById('facility-dropdown-btn');
+            if (facilityBtn && facilityWrapper) {
+                facilityBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const isOpen = facilityWrapper.classList.toggle('open');
+                    facilityBtn.setAttribute('aria-expanded', String(isOpen));
+                });
+                document.addEventListener('click', () => {
+                    facilityWrapper.classList.remove('open');
+                    facilityBtn.setAttribute('aria-expanded', 'false');
+                });
+            }
+
+            // Mobile Drawer
+            const mobileDrawer = document.getElementById('mobile-drawer');
+            const openMobileBtn = document.getElementById('mobile-menu-open-btn');
+            const closeMobileBtn = document.getElementById('mobile-menu-close-btn');
+            const mobileBackdrop = document.getElementById('mobile-drawer-backdrop');
+            if (openMobileBtn && mobileDrawer) {
+                openMobileBtn.addEventListener('click', () => {
+                    mobileDrawer.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                });
+            }
+            if (closeMobileBtn) closeMobileBtn.addEventListener('click', closeMobileDrawer);
+            if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeMobileDrawer);
+            document.querySelectorAll('.mobile-nav-link').forEach((l) => l.addEventListener('click', closeMobileDrawer));
+
+            // Kitchen Order Form Submit (FormSubmit AJAX)
+            const orderForm = document.getElementById('kitchen-order-form');
+            if (orderForm) {
+                orderForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const submitBtn = orderForm.querySelector('button[type="submit"]');
+                    const statusEl = document.getElementById('kitchen-form-status');
+                    const originalHtml = submitBtn.innerHTML;
+                    const service = document.getElementById('ko-service').value;
+
+                    statusEl.classList.add('hidden');
+                    submitBtn.disabled = true;
+                    submitBtn.classList.add('opacity-80', 'cursor-wait');
+                    submitBtn.textContent = 'Sending to Kitchen...';
+
+                    const payload = {
+                        _subject: `New Pahadi Rasoi Request (${service}) — Hotel Meghdoot`,
+                        _template: 'table',
+                        _captcha: 'false',
+                        'Source': 'Pahadi Rasoi Restaurant Page (pahadi-rasoi.html)',
+                        'Service Type': service,
+                        'Full Name': document.getElementById('ko-name').value.trim(),
+                        'Phone / WhatsApp': document.getElementById('ko-phone').value.trim(),
+                        'Date': document.getElementById('ko-date').value,
+                        'Guests / Plates': document.getElementById('ko-guests').value,
+                        'Selected Dishes & Notes': document.getElementById('ko-dishes').value.trim() || 'None'
+                    };
+
+                    try {
+                        const res = await fetch(FORMSUBMIT_ENDPOINT, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+                        const result = await res.json();
+                        if (res.ok && result && (result.success === 'true' || result.success === true)) {
+                            orderForm.reset();
+                            selectedDishes.clear();
+                            syncPreorderTray();
+                            document.querySelectorAll('.menu-dish-card').forEach((c) => {
+                                c.classList.remove('selected');
+                                const b = c.querySelector('.add-dish-btn');
+                                if (b) {
+                                    b.textContent = '+ Add';
+                                    b.classList.remove('bg-tandoor', 'text-white');
+                                    b.classList.add('bg-sand', 'text-charcoal');
+                                }
+                            });
+                            statusEl.textContent = `Thank you! Your kitchen request has been sent directly to ${HOTEL_EMAIL}.`;
+                            statusEl.className = 'text-xs sm:text-sm font-medium rounded-lg px-4 py-3 bg-emerald-50 text-emerald-900 border border-emerald-200';
+                            showToast('Namaste! Your Pahadi Rasoi request has been sent to our kitchen desk.');
+                        } else {
+                            throw new Error('Failed');
+                        }
+                    } catch (err) {
+                        statusEl.textContent = 'Unable to send right now. Please call +91 98765 43210 directly.';
+                        statusEl.className = 'text-xs sm:text-sm font-medium rounded-lg px-4 py-3 bg-red-50 text-red-800 border border-red-200';
+                        showToast('Unable to send right now. Please try again.', true);
+                    } finally {
+                        submitBtn.disabled = false;
+                        submitBtn.classList.remove('opacity-80', 'cursor-wait');
+                        submitBtn.innerHTML = originalHtml;
+                    }
+                });
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMobileDrawer();
+        });
+    </script>
+</body>
+</html>
